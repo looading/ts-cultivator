@@ -11,6 +11,8 @@ Just neet to export a Variable `open(boolean)` and a Function container `runner`
 Drop files on `src/sample`, then you can make ts exercise unfettered。
 
 
+# Require NodeJs Version >= v8.1.2
+
 ## Usage
 
 How to use?
