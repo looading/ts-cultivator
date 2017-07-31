@@ -1,15 +1,20 @@
 import { Subject } from 'rxjs/Subject';
 import { Student } from './student';
 
-const looading = new Student();
-const bob = new Student('bob');
 
-const subject = new Subject();
+export const open = true;
+export const runner = () => {
+  const looading = new Student();
+  const bob = new Student('bob');
 
-subject.subscribe(looading.getMsg);
+  const subject = new Subject();
 
-subject.next('明早8点上课.');
+  subject.subscribe(looading.getMsg);
 
-subject.subscribe(bob.getMsg);
+  subject.next('明早8点上课.');
 
-subject.next('下午全班大扫除, 一个都不能溜!');
+  subject.subscribe(bob.getMsg);
+
+  subject.next('下午全班大扫除, 一个都不能溜!');
+};
+

@@ -4,5 +4,5 @@ var util_1 = require("./util");
 var path = require("path");
 var samplePath = path.join(__dirname, 'sample');
 var files = util_1.iteratorDir(samplePath);
-files.map(util_1.exec);
+util_1.execAsync(files);
 //# sourceMappingURL=index.js.map

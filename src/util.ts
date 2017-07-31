@@ -44,16 +44,23 @@ export const iteratorDir = (dir: string): string[] => {
 };
 
 
-export const exec = (file: string): boolean => {
+export const exec = async (file: string): Promise<boolean> => {
   const instance = require(file);
   if (instance.open) {
     const label = `running ${ path.relative(__dirname, file) } `;
     console.time(label);
     console.log('---------------------------------------------\n');
-    run(instance.open, instance.runner);
+    await run(instance.open, instance.runner);
     console.timeEnd(label);
     return true;
   } else {
     return false;
+  }
+};
+
+
+export const execAsync = async (files: string[]): Promise<void> => {
+  for (const item of files) {
+    await exec(item);
   }
 };
