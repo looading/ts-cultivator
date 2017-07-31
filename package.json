@@ -1,0 +1,21 @@
+{
+  "name": "ts-cultivator",
+  "version": "1.0.0",
+  "description": "typescript exercise",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "tsc -w",
+    "test": "nodemon dist/index.js"
+  },
+  "author": "ctyloading <946505808@qq.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^8.0.2",
+    "codelyzer": "^3.1.2",
+    "rxjs": "^5.4.2",
+    "tslint": "^5.5.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "tslint-language-service": "^0.9.6",
+    "typescript": "^2.4.2"
+  }
+}
