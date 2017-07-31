@@ -12,10 +12,14 @@
   "dependencies": {
     "@types/node": "^8.0.2",
     "codelyzer": "^3.1.2",
+    "nodemon": "^1.11.0",
     "rxjs": "^5.4.2",
     "tslint": "^5.5.0",
     "tslint-eslint-rules": "^4.1.1",
     "tslint-language-service": "^0.9.6",
     "typescript": "^2.4.2"
+  },
+  "engines": {
+    "node": ">=8.1.2"
   }
 }
